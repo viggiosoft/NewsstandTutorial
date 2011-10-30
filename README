@@ -1,0 +1,25 @@
+Newsstand Tutorial README
+=========================
+
+This is the reference source code for the two parts tutorial published in my blog: 
+[Newsstand Tutorial](http://www.viggiosoft.com/blog/blog/2011/10/17/ios-newsstand-tutorial/)
+
+This code to be successfully run requires some extra work:
+
+- a iOS developer account is needed as Push Notifications and In App Purchase don't work on the simulator
+- all the iTunesConnect and iOS Developer Portal setup stuff is needed (create bundle ID, create provisioning profiles, configure for push notifications,
+  add In App Purchases)
+- as it uses Urban Airship (UA) for push notifications, the Airship SDK must be downloaded and installed at the same level
+  of this project (so if you install this project in Github/NewsstandTutorial you should also add Github/Airship)
+- in order to use UA you must sing up with a developer account, create your application, provide the APNS keys
+- if you are not interested in the push notifications stuff you can simply remove the lines in the code and references to UA
+- if you are not interested in the In App Purchase features you can run the application in the simulator
+- if you run the application in the simulator you will be able to see the basic Newsstand features
+
+My suggestion is that you don't use this code to run the example but only as reference for your own applications.
+Besides take care that this code is for a tutorial only, so it is not optmizied for memory management and many coding shortcuts
+that are good for a tutorial should be better planned for a real app.
+
+ 
+
+
