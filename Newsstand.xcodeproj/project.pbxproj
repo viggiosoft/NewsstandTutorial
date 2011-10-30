@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64063B24144CAF320004B625 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64063B23144CAF320004B625 /* UIKit.framework */; };
+		64063B26144CAF320004B625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64063B25144CAF320004B625 /* Foundation.framework */; };
+		64063B28144CAF320004B625 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64063B27144CAF320004B625 /* CoreGraphics.framework */; };
+		64063B2E144CAF320004B625 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64063B2C144CAF320004B625 /* InfoPlist.strings */; };
+		64063B30144CAF320004B625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64063B2F144CAF320004B625 /* main.m */; };
+		64063B34144CAF320004B625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64063B33144CAF320004B625 /* AppDelegate.m */; };
+		64063B3D144CB04A0004B625 /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64063B3B144CB04A0004B625 /* StoreViewController.m */; };
+		64063B3E144CB04A0004B625 /* StoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64063B3C144CB04A0004B625 /* StoreViewController.xib */; };
+		64063B40144CB0DE0004B625 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 64063B3F144CB0DE0004B625 /* icon.png */; };
+		64063B42144CB0E60004B625 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64063B41144CB0E60004B625 /* icon@2x.png */; };
+		64063B44144D5BE10004B625 /* icon_newsstand.png in Resources */ = {isa = PBXBuildFile; fileRef = 64063B43144D5BE10004B625 /* icon_newsstand.png */; };
+		64063B4A144D63EB0004B625 /* issues.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64063B49144D63EB0004B625 /* issues.plist */; };
+		64063B4D144D749A0004B625 /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 64063B4C144D749A0004B625 /* Publisher.m */; };
+		64063B4F144D80CF0004B625 /* IssueTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64063B4E144D80CF0004B625 /* IssueTableCell.xib */; };
+		64063B51144D97D40004B625 /* NewsstandKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64063B50144D97D40004B625 /* NewsstandKit.framework */; };
+		64063B53144DC1680004B625 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64063B52144DC1680004B625 /* QuickLook.framework */; };
+		6452268E145C3DA5008AC4C7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6452268D145C3DA5008AC4C7 /* StoreKit.framework */; };
+		64522692145C859F008AC4C7 /* ReceiptCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 64522691145C859F008AC4C7 /* ReceiptCheck.m */; };
+		64DAD409144F0867002740C6 /* libUAirship-1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAD408144F0867002740C6 /* libUAirship-1.1.0.a */; };
+		64DAD40C144F0881002740C6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAD40B144F0881002740C6 /* CFNetwork.framework */; };
+		64DAD40E144F088B002740C6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAD40D144F088B002740C6 /* MobileCoreServices.framework */; };
+		64DAD410144F0891002740C6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAD40F144F0891002740C6 /* Security.framework */; };
+		64DAD412144F08A0002740C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAD411144F08A0002740C6 /* SystemConfiguration.framework */; };
+		64DAD414144F08A9002740C6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAD413144F08A9002740C6 /* libz.dylib */; };
+		64DAD416144F08B4002740C6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAD415144F08B4002740C6 /* libsqlite3.dylib */; };
+		64DAD418144F08BF002740C6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAD417144F08BF002740C6 /* CoreTelephony.framework */; };
+		64FFD776145C8F4500F1AAAD /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FFD775145C8F4500F1AAAD /* NSString+Base64.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		64063B1F144CAF320004B625 /* Newsstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64063B23144CAF320004B625 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64063B25144CAF320004B625 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64063B27144CAF320004B625 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64063B2B144CAF320004B625 /* Newsstand-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Newsstand-Info.plist"; sourceTree = "<group>"; };
+		64063B2D144CAF320004B625 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64063B2F144CAF320004B625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64063B31144CAF320004B625 /* Newsstand-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Newsstand-Prefix.pch"; sourceTree = "<group>"; };
+		64063B32144CAF320004B625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64063B33144CAF320004B625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64063B3A144CB04A0004B625 /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		64063B3B144CB04A0004B625 /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		64063B3C144CB04A0004B625 /* StoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreViewController.xib; sourceTree = "<group>"; };
+		64063B3F144CB0DE0004B625 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		64063B41144CB0E60004B625 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		64063B43144D5BE10004B625 /* icon_newsstand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_newsstand.png; sourceTree = "<group>"; };
+		64063B49144D63EB0004B625 /* issues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = issues.plist; sourceTree = "<group>"; };
+		64063B4B144D749A0004B625 /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
+		64063B4C144D749A0004B625 /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
+		64063B4E144D80CF0004B625 /* IssueTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueTableCell.xib; sourceTree = "<group>"; };
+		64063B50144D97D40004B625 /* NewsstandKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewsstandKit.framework; path = System/Library/Frameworks/NewsstandKit.framework; sourceTree = SDKROOT; };
+		64063B52144DC1680004B625 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		6452268D145C3DA5008AC4C7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		64522690145C859F008AC4C7 /* ReceiptCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptCheck.h; path = ../ReceiptCheck.h; sourceTree = "<group>"; };
+		64522691145C859F008AC4C7 /* ReceiptCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptCheck.m; path = ../ReceiptCheck.m; sourceTree = "<group>"; };
+		64DAD408144F0867002740C6 /* libUAirship-1.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.1.0.a"; path = "../Airship/libUAirship-1.1.0.a"; sourceTree = "<group>"; };
+		64DAD40B144F0881002740C6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		64DAD40D144F088B002740C6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		64DAD40F144F0891002740C6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		64DAD411144F08A0002740C6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		64DAD413144F08A9002740C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		64DAD415144F08B4002740C6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		64DAD417144F08BF002740C6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		64FFD774145C8F4500F1AAAD /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		64FFD775145C8F4500F1AAAD /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64063B1C144CAF320004B625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6452268E145C3DA5008AC4C7 /* StoreKit.framework in Frameworks */,
+				64DAD418144F08BF002740C6 /* CoreTelephony.framework in Frameworks */,
+				64DAD416144F08B4002740C6 /* libsqlite3.dylib in Frameworks */,
+				64DAD414144F08A9002740C6 /* libz.dylib in Frameworks */,
+				64DAD412144F08A0002740C6 /* SystemConfiguration.framework in Frameworks */,
+				64DAD410144F0891002740C6 /* Security.framework in Frameworks */,
+				64DAD40E144F088B002740C6 /* MobileCoreServices.framework in Frameworks */,
+				64DAD40C144F0881002740C6 /* CFNetwork.framework in Frameworks */,
+				64DAD409144F0867002740C6 /* libUAirship-1.1.0.a in Frameworks */,
+				64063B53144DC1680004B625 /* QuickLook.framework in Frameworks */,
+				64063B51144D97D40004B625 /* NewsstandKit.framework in Frameworks */,
+				64063B24144CAF320004B625 /* UIKit.framework in Frameworks */,
+				64063B26144CAF320004B625 /* Foundation.framework in Frameworks */,
+				64063B28144CAF320004B625 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64063B14144CAF320004B625 = {
+			isa = PBXGroup;
+			children = (
+				64FFD774145C8F4500F1AAAD /* NSString+Base64.h */,
+				64FFD775145C8F4500F1AAAD /* NSString+Base64.m */,
+				64063B49144D63EB0004B625 /* issues.plist */,
+				64063B43144D5BE10004B625 /* icon_newsstand.png */,
+				64063B41144CB0E60004B625 /* icon@2x.png */,
+				64063B3F144CB0DE0004B625 /* icon.png */,
+				64063B29144CAF320004B625 /* Newsstand */,
+				64063B22144CAF320004B625 /* Frameworks */,
+				64063B20144CAF320004B625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64063B20144CAF320004B625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64063B1F144CAF320004B625 /* Newsstand.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64063B22144CAF320004B625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6452268D145C3DA5008AC4C7 /* StoreKit.framework */,
+				64DAD417144F08BF002740C6 /* CoreTelephony.framework */,
+				64DAD415144F08B4002740C6 /* libsqlite3.dylib */,
+				64DAD413144F08A9002740C6 /* libz.dylib */,
+				64DAD411144F08A0002740C6 /* SystemConfiguration.framework */,
+				64DAD40F144F0891002740C6 /* Security.framework */,
+				64DAD40D144F088B002740C6 /* MobileCoreServices.framework */,
+				64DAD40B144F0881002740C6 /* CFNetwork.framework */,
+				64DAD408144F0867002740C6 /* libUAirship-1.1.0.a */,
+				64063B52144DC1680004B625 /* QuickLook.framework */,
+				64063B50144D97D40004B625 /* NewsstandKit.framework */,
+				64063B23144CAF320004B625 /* UIKit.framework */,
+				64063B25144CAF320004B625 /* Foundation.framework */,
+				64063B27144CAF320004B625 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64063B29144CAF320004B625 /* Newsstand */ = {
+			isa = PBXGroup;
+			children = (
+				64522690145C859F008AC4C7 /* ReceiptCheck.h */,
+				64522691145C859F008AC4C7 /* ReceiptCheck.m */,
+				64063B32144CAF320004B625 /* AppDelegate.h */,
+				64063B33144CAF320004B625 /* AppDelegate.m */,
+				64063B2A144CAF320004B625 /* Supporting Files */,
+				64063B3A144CB04A0004B625 /* StoreViewController.h */,
+				64063B3B144CB04A0004B625 /* StoreViewController.m */,
+				64063B3C144CB04A0004B625 /* StoreViewController.xib */,
+				64063B4E144D80CF0004B625 /* IssueTableCell.xib */,
+				64063B4B144D749A0004B625 /* Publisher.h */,
+				64063B4C144D749A0004B625 /* Publisher.m */,
+			);
+			path = Newsstand;
+			sourceTree = "<group>";
+		};
+		64063B2A144CAF320004B625 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64063B2B144CAF320004B625 /* Newsstand-Info.plist */,
+				64063B2C144CAF320004B625 /* InfoPlist.strings */,
+				64063B2F144CAF320004B625 /* main.m */,
+				64063B31144CAF320004B625 /* Newsstand-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64063B1E144CAF320004B625 /* Newsstand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64063B37144CAF320004B625 /* Build configuration list for PBXNativeTarget "Newsstand" */;
+			buildPhases = (
+				64063B1B144CAF320004B625 /* Sources */,
+				64063B1C144CAF320004B625 /* Frameworks */,
+				64063B1D144CAF320004B625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Newsstand;
+			productName = Newsstand;
+			productReference = 64063B1F144CAF320004B625 /* Newsstand.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64063B16144CAF320004B625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = i3factory;
+			};
+			buildConfigurationList = 64063B19144CAF320004B625 /* Build configuration list for PBXProject "Newsstand" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64063B14144CAF320004B625;
+			productRefGroup = 64063B20144CAF320004B625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64063B1E144CAF320004B625 /* Newsstand */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64063B1D144CAF320004B625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64063B2E144CAF320004B625 /* InfoPlist.strings in Resources */,
+				64063B3E144CB04A0004B625 /* StoreViewController.xib in Resources */,
+				64063B40144CB0DE0004B625 /* icon.png in Resources */,
+				64063B42144CB0E60004B625 /* icon@2x.png in Resources */,
+				64063B44144D5BE10004B625 /* icon_newsstand.png in Resources */,
+				64063B4A144D63EB0004B625 /* issues.plist in Resources */,
+				64063B4F144D80CF0004B625 /* IssueTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64063B1B144CAF320004B625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64063B30144CAF320004B625 /* main.m in Sources */,
+				64063B34144CAF320004B625 /* AppDelegate.m in Sources */,
+				64063B3D144CB04A0004B625 /* StoreViewController.m in Sources */,
+				64063B4D144D749A0004B625 /* Publisher.m in Sources */,
+				64522692145C859F008AC4C7 /* ReceiptCheck.m in Sources */,
+				64FFD776145C8F4500F1AAAD /* NSString+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		64063B2C144CAF320004B625 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64063B2D144CAF320004B625 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64063B35144CAF320004B625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		64063B36144CAF320004B625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64063B38144CAF320004B625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Newsstand/Newsstand-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../Airship/**";
+				INFOPLIST_FILE = "Newsstand/Newsstand-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Airship\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		64063B39144CAF320004B625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Newsstand/Newsstand-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../Airship/**";
+				INFOPLIST_FILE = "Newsstand/Newsstand-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Airship\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64063B19144CAF320004B625 /* Build configuration list for PBXProject "Newsstand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64063B35144CAF320004B625 /* Debug */,
+				64063B36144CAF320004B625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64063B37144CAF320004B625 /* Build configuration list for PBXNativeTarget "Newsstand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64063B38144CAF320004B625 /* Debug */,
+				64063B39144CAF320004B625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64063B16144CAF320004B625 /* Project object */;
+}

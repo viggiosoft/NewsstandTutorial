@@ -1,0 +1,48 @@
+//
+// Prefix header for all source files of the 'Newsstand' target in the 'Newsstand' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <StoreKit/StoreKit.h>
+#endif
+
+
+// Debug
+#ifdef DEBUG
+#    define DLog(...) NSLog(__VA_ARGS__)
+#	 define ELog(s,...) NSLog((@"[%s] " s),__func__,## __VA_ARGS__);
+#else
+#    define DLog(...) /* */
+#	 define ELog(...) /* */
+#endif
+#define ALog(...) NSLog(__VA_ARGS__)
+
+
+// Shorthand for getting localized strings, used in formats below for readability
+#define LocStr(key) [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
+
+
+// User sub-dirs
+#define DocumentsDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, \
+NSUserDomainMask, YES) objectAtIndex:0]
+
+#define LibraryDirectory [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, \
+NSUserDomainMask, YES) objectAtIndex:0]
+
+#define DocumentsSubDirectory(dir) [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, \
+NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:dir]
+
+#define LibrarySubDirectory(dir) [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, \
+NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:dir]
+
+#define CacheDirectory [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+
