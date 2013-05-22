@@ -11,7 +11,7 @@ This code to be successfully run requires some extra work:
   add In App Purchases)
 - as it uses Urban Airship (UA) for push notifications, the Airship SDK must be downloaded and installed at the same level
   of this project (so if you install this project in Github/NewsstandTutorial you should also add Github/Airship)
-- in order to use UA you must sing up with a developer account, create your application, provide the APNS keys
+- in order to use UA you must sign up with a developer account, create your application, provide the APNS keys
 - if you are not interested in the push notifications stuff you can simply remove the lines in the code and references to UA
 - if you are not interested in the In App Purchase features you can run the application in the simulator
 - if you run the application in the simulator you will be able to see the basic Newsstand features
